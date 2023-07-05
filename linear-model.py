@@ -28,5 +28,5 @@ print(linear_model.summary())
 linear_model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=20)
 print(linear_model.predict([ [1000.0], [200.0], [300.1], [400.2], [500.2] ] ).tolist() )   
 
-export_path = 'linear-model/1/'
+export_path = 'marco-linear-model/1/'
 tf.saved_model.save(linear_model, os.path.join('./',export_path))
